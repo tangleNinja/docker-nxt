@@ -9,5 +9,5 @@ WORKDIR /usr/local/nxt
 RUN echo 'nxt.allowedBotHosts=*' >> conf/nxt.properties
 RUN echo 'nxt.apiServerHost=0.0.0.0' >> conf/nxt.properties
 
-EXPOSE 7876 7876
+EXPOSE 7876
 ENTRYPOINT ["java", "-jar", "nxt.jar"]
