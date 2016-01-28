@@ -5,8 +5,21 @@
 
 ## Quickstart
 
-To start using NXT client in docker, run the following command :
+To build this image run
 
 ```sh
-docker run -dt -p 7876:7876 damoun/nxt
+docker build -t tangleNinja/nxt:1.7.5 .
 ```
+
+in the same directory where the Dockerfile is located.
+
+
+To run NXT inside docker, run the following command :
+
+```sh
+docker run -dt -p 7876:7876 -p 7874:7874 tangleNinja/nxt:1.7.5
+```
+
+Port 7876 is needed for API ( GUI )
+
+Port 7874 is NXT's P2P port.
