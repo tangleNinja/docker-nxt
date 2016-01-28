@@ -1,6 +1,7 @@
 FROM java:8-jre
 
-MAINTAINER Damien Plenard "damien+docker@plenard.me"
+# Forked From
+#MAINTAINER Damien Plenard "damien+docker@plenard.me"
 
 ADD https://bitbucket.org/JeanLucPicard/nxt/downloads/nxt-client-1.7.5.zip /tmp/nxt-client.zip
 
